@@ -1,0 +1,9 @@
+参考一篇大佬的文章：https://www.jianshu.com/p/f37f8c295057
+由于初学，所以对这个项目进行了细致的研究，在代码中添加了很多注释
+
+禁用了shiro的session，因为jwt会保存token的用户密码和过期时间
+
+程序在获取principal和credentials时会调用自己设置的JWTToken的
+方法
+
+可以在JWTFilter的第70行打断点查看细节
